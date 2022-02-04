@@ -20,9 +20,9 @@ namespace BinaryOp
             PathItems.RemoveAt(PathItems.Count-1);
         }
 
-        public bool Add(string path)
+        public bool Add(string path, string extend = "")
         {
-            PathItems.Add(path);
+            PathItems.Add(extend.Length != 0 ? $"{path}.{extend}" : path);
             if (File.Exists(Get()))
             {
                 return true;
