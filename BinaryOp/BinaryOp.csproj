@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\RinTester\RinTester\RinTester.csproj" />
+  </ItemGroup>
+
 </Project>
